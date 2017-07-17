@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20170717161358) do
   end
 
   create_table "games", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.bigint "deck_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,0 +1,7 @@
+<h1>Decks</h1>
+
+<ul>
+  <% @decks.each do |deck| %>
+    <li><%= link_to deck.name, new_deck_game_path(deck) %></li>
+  <% end %>
+</ul>
